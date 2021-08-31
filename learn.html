@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/responsive.css" class="css" />
+    <link rel="stylesheet" href="Css/style1.css" />
+  </head>
+  <body>
+    <nav class="navbar1 background h-nav-resp">
+      <ul class="nav-list v-class-resp">
+        <div class="logo">
+          <img src="img/CodeLogo.jpg" alt="Logo" width="300" />
+        </div>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Services</a></li>
+        <li><a href="index.html">Contact Us</a></li>
+      </ul>
+      <div class="rightNav v-class-resp">
+        <form action="https://google.com/search" target="_blank" type="GET">
+          <input type="search" name="search" id="search" />
+          <br />
+          <button class="btn btm-sm" type="submit">search</button>
+          <script>
+            var form = document.querySelector("form");
+
+            form.addEventListener("submit", function (e) {
+              e.preventDefault();
+              var search = form.querySelector("input[type=search]");
+              search.value = search.value;
+              form.submit();
+            });
+          </script>
+        </form>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+    <section class="background1 firstsection1">
+      <h1>Learn Programming</h1>
+      <br />
+      <div class="R">
+        <h2>Here is two good programming youtube channel.</h2>
+        <button
+          class="btn1"
+          onclick="location.href='https://www.youtube.com/channel/UCBwmMxybNva6P_5VmxjzwqA';"
+        >
+          Apna Collage
+        </button>
+        <br />
+        <button
+          class="btn1"
+          onclick="location.href='https://www.youtube.com/channel/UCeVMnSShP_Iviwkknt83cww';"
+        >
+          CodeWithHarry
+        </button>
+      </div>
+      <h1>Practice</h1>
+      <div class="S">
+        <h2>Here is some Competitive programming platform.</h2>
+        <button class="btn1" onclick="location.href='https://www.codechef.com/';">
+          CodeChef
+        </button>
+        <br>
+        <button class="btn1" onclick="location.href='https://www.hackerrank.com/';">
+            Hackerrank
+          </button>
+          <br>
+          <button class="btn1" onclick="location.href='https://codeforces.com/';">
+            Codeforces
+          </button>
+      </div>
+    </section>
+    <section class="cmp">
+        <h1>online-compiler</h1>
+        <iframe class="cmp_size" src="https://www.programiz.com/cpp-programming/online-compiler/" frameborder="0" ></iframe>
+    </section>
+    <script src="Js/resp1.js"></script>
+    
+  </body>
+</html>
